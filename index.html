@@ -14,24 +14,24 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <h1 class="title">Hexal</h1>
     <nav>
       <ul>
-        <li><a href="#">PORTFOLIO</a></li><span class="separator">&sdot;</span>
-        <li><a href="#">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li><span class="separator">&sdot;</span>
+        <li><a href="#about">ABOUT</a></li>
         <li class="logo-img"><a href="#"><img src="assets/logo.png" alt="logo"></a></li>
         <li><a href="#">BLOG</a></li><span class="separator">&sdot;</span>
-        <li><a href="#">GET IN TOUCH</a></li>
+        <li><a href="#get-in-touch">GET IN TOUCH</a></li>
       </ul>
     </nav>
-    <div class="header-bottom">
-      <div class="triangle"></div>
+    <div class="triangle">
     </div>
+    <div class="header-line"></div>
   </header>
 
   <main>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="hex-row hex-row1">
         <div class="hex">
           <div class="hex-inside">
@@ -117,15 +117,37 @@
             </div>
           </div>  
         </div>
-      </div>              
+      </div>
+      
+      <div class="slider">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>  
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+      <div class="portfolio-line">
+      </div>
     </section>
 
-    <section>
-      <article>
-        <img src="1" alt="person">
-        <h3></h3>
-        <p></p>
-        <p></p>
+    <section class="about" id="about">
+      <article class="person">
+          <div class="hex">
+            <div class="hex-inside">
+              <div class="hex-image hex-author">
+              </div>
+            </div>  
+          </div>
+        <h3>Smith Anderson</h3>
+        <p>Illustrator & Character Designer</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Suspendisse a sem nec lectus suscipit fermentum. Sed vitae libero vel mi aliquet efficitur gravida ut nulla. 
+          Nunc at odio dolor. Maecenas dignissim gravida enim, in tincidunt tortor interdum et. 
+          Cras sagittis interdum mauris in vulputate. Pellentesque sed libero non sem sollicitudin congue vitae in est. 
+          Maecenas eget ipsum mi.
+        </p>
       </article>
     </section>
   </main>

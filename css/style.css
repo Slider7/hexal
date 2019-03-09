@@ -1,11 +1,12 @@
 body{
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 1020px;
 }
 
 /*--------------------header----------------------*/
 header{
-  width: 1020px;
+  widows: 100%;
   margin: 0 auto;
 }
 
@@ -75,36 +76,36 @@ nav a:visited{
   margin: 0 8px;
 }
 
-.header-bottom{
-  display: flex;
-}
-
 .triangle{
   width: 0;
   height: 0;
-  margin: -26px auto -22px auto;
+  margin: -26px auto -26px auto;
   border-style: solid;
   border-width: 52px 90px 0 90px;
   border-color: #323232 transparent transparent transparent;
   z-index: 0;
-  position: relative;
 }
 
-.triangle::before{
-  width: 410px;
-  content: "";
-  border-bottom: 1px solid #e4e9eb;
-  position: absolute;
-  top: -14px;
-  left: -480px;
+.header-line{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-.triangle::after{
-  width: 410px;
+
+.header-line::before{
+  display: inline-block;
+  width: 40%;
   content: "";
-  border-bottom: 1px solid #e4e9eb;
-  position: absolute;
-  top: -14px;
-  left: 70px;
+  border-top: 1px solid #e4e9eb;
+  margin-right: 7%;
+}
+.header-line::after{
+  display: inline-block;
+  width: 40%;
+  content: "";
+  border-top: 1px solid #e4e9eb;
+  margin-left: 7%;
 }
 
 
@@ -116,19 +117,19 @@ nav a:visited{
 }
 
 .hex-row1{
-  margin-top: 55px; 
+  margin-top: 63px; 
 }
 
 .hex-row2{
-  margin-top: -62px; 
+  margin-top: -61px; 
 }
 
 .hex-row3{
-  margin-top: -60px; 
+  margin-top: -61px; 
 }
 
 .hex {
-  margin: 10px;
+    margin: 10px;
     width: 180px;
     height: 209px;
     transform: rotate(120deg);
@@ -169,7 +170,6 @@ nav a:visited{
 }
 .hex1-3{
   background-image: url("../assets/hex-3.png");
-  
 }
 .hex1-4{
   background-image: url("../assets/hex-4.png");
@@ -200,4 +200,55 @@ nav a:visited{
 }
 .hex3-4{
   background-image: url("../assets/hex-13.png");
+}
+
+/*-------SLIDER---------*/
+.slider{
+  margin-top: 48px;
+  display: flex;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.slider a{
+  display: inline-block;
+  box-sizing: border-box;
+  height: 6px;
+  width: 6px;
+  border: 1px solid #ddd2c5;
+  background-color: #ddd2c5;
+  margin: 0;
+  margin-right: 3px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.slider a:hover{
+  border: 1px solid #8b8784;
+  background-color: #8b8784;
+}
+
+.portfolio-line{
+  margin: 11px auto;
+  width: 94%;
+  border-top: 1px solid #e4e9eb;
+}
+
+/*-----------------ABOUT---------------*/
+.about{
+  background-color: #2eb398;
+  padding: 12px 0 12px 0;
+  margin: 0;
+}
+.person{
+  display: block;/*flex;*/
+  width: 820px;
+  height: 317px;
+  margin: 0 auto;
+  border-left: 1px solid #219d84;
+  border-right: 1px solid #219d84;
+}
+
+.hex-author{
+  background-image: url("../assets/anderson-photo.jpg");
 }
