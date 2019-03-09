@@ -35,7 +35,7 @@ nav ul{
 nav li{
   margin: 0;
   padding: 5px 0;
-  font-family: Lato;
+  font-family: Lato, "Sans Serif";
   font-size: 10px;
   font-weight: 700;
   display: inline-block;
@@ -241,14 +241,57 @@ nav a:visited{
   margin: 0;
 }
 .person{
-  display: block;/*flex;*/
-  width: 820px;
+  display: flex;
+  align-items: center;
+  width: 800px;
   height: 317px;
   margin: 0 auto;
+	padding: 0 10px;
   border-left: 1px solid #219d84;
   border-right: 1px solid #219d84;
 }
 
 .hex-author{
+  flex-shrink: 0;
+}
+.img-author{
   background-image: url("../assets/anderson-photo.jpg");
+}
+.author-info{
+	font-family: "Maven Pro", "Sans Serif";
+	margin: 0 10px;
+}
+.author-info h2{
+  font-weight: 400;
+	font-size: 1.85em;
+	color: rgba(215, 252, 245, 255);
+}
+.author-info h3{
+	font-weight: 400;
+	font-size: 1.1em;
+}
+.author-info p{
+	font-size: 12px;
+	line-height: 1.85em;
+	font-family: ﻿Lato, ﻿"Sans Serif";
+  font-weight: 400;
+  color: rgba(215, 252, 245, 255);
+  text-align: justify;
+	word-spacing: -.35ch;	
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+}
+
+.social-icons a{
+  display: inline-block;
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #ddd2c5;
+  background-color: #ddd2c5;
+  margin: 0;
+  margin-right: 3px;
+  padding: 0;
+  text-decoration: none;
 }
