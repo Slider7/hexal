@@ -120,12 +120,44 @@ nav a:visited{
   margin-top: 63px; 
 }
 
+.hex-row1::before{
+  display: inline-block;
+  content: "";
+  border-left: 1px solid #d7dde0;  
+  margin: 63px 10px 0px -12px ;
+  height: 104px;
+}
+
+.hex-row1::after{
+  display: inline-block;
+  content: "";
+  border-right: 1px solid #d7dde0;  
+  margin: 63px -12px 0px 10px ;
+  height: 104px;
+}
+
 .hex-row2{
   margin-top: -61px; 
 }
 
 .hex-row3{
   margin-top: -61px; 
+}
+
+.hex-row3::before{
+  display: inline-block;
+  content: "";
+  border-left: 1px solid #d7dde0;  
+  margin: 61px 10px 0px -12px ;
+  height: 104px;
+}
+
+.hex-row3::after{
+  display: inline-block;
+  content: "";
+  border-right: 1px solid #d7dde0;  
+  margin: 61px -12px 0px 10px ;
+  height: 104px;
 }
 
 .hex {
@@ -174,18 +206,22 @@ nav a:visited{
 }
 .hex1-2{
   background-image: url("../assets/hex-2.png");
+  background-position: -22px -9px;
 }
 .hex1-3{
   background-image: url("../assets/hex-3.png");
 }
 .hex1-4{
   background-image: url("../assets/hex-4.png");
+  background-position: -21px -17px;
 }
 .hex2-1{
   background-image: url("../assets/hex-5.png");
+  background-position: -21px -12px;
 }
 .hex2-2{
   background-image: url("../assets/hex-6.png");
+  background-position: -21px -12px;
 }
 .hex2-3{
   background-image: url("../assets/hex-7.png");
@@ -207,6 +243,7 @@ nav a:visited{
 }
 .hex3-4{
   background-image: url("../assets/hex-13.png");
+  background-position: -11px -6px;
 }
 
 /*-------SLIDER---------*/
@@ -273,7 +310,7 @@ nav a:visited{
 .author-info h2{
   font-weight: 400;
 	font-size: 1.85em;
-  color: rgba(215, 252, 245, 255);
+  color: #d7fcf5;
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -282,6 +319,7 @@ nav a:visited{
   font-size: 1.1em;
   margin-top: 3px;
   margin-bottom: 12px;
+  color: #20816d;
 }
 .author-info p{
 	font-size: 12px;
@@ -391,6 +429,11 @@ nav a:visited{
   background-color: #454545;
   border: none;
 }
+
+/* не по пиксель-перфект
+.get-form input:invalid { 
+  border: 1px solid red;
+}*/
 
 .get-form textarea{
   line-height: 25pt;
