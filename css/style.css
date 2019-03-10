@@ -161,6 +161,13 @@ nav a:visited{
   background-position: center;
 }
 
+.hex-image:hover{
+  background-size: cover;
+  filter: brightness(55%);
+  -webkit-filter: brightness(55%);
+  cursor: pointer;
+}
+
 .hex1-1{
   background-image: url("../assets/hex-1.png");
   background-position: -22px -11px;
@@ -256,19 +263,25 @@ nav a:visited{
 }
 .img-author{
   background-image: url("../assets/anderson-photo.jpg");
+  pointer-events: none;
 }
+
 .author-info{
 	font-family: "Maven Pro", "Sans Serif";
-	margin: 0 10px;
+	margin: -1px 9px 1px 9px;
 }
 .author-info h2{
   font-weight: 400;
 	font-size: 1.85em;
-	color: rgba(215, 252, 245, 255);
+  color: rgba(215, 252, 245, 255);
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 .author-info h3{
 	font-weight: 400;
-	font-size: 1.1em;
+  font-size: 1.1em;
+  margin-top: 3px;
+  margin-bottom: 12px;
 }
 .author-info p{
 	font-size: 12px;
@@ -280,18 +293,206 @@ nav a:visited{
 	word-spacing: -.35ch;	
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
-	-ms-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.social-icons{
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 0px;
+  align-self: flex-end;
+  justify-content: flex-end;
 }
 
 .social-icons a{
-  display: inline-block;
-  box-sizing: border-box;
-  height: 12px;
-  width: 12px;
-  border: 1px solid #ddd2c5;
-  background-color: #ddd2c5;
   margin: 0;
-  margin-right: 3px;
   padding: 0;
+}
+
+.social-icon-img{
+  margin: 0;
+  padding: 0;
+}
+
+.social-icon-img:hover{
+  filter: hue-rotate(180deg);
+  -webkit-filter: hue-rotate(180deg);
+}
+
+/*----------------------GET-IN-TOUCH---------------------------------------*/
+.get-in-touch{
+  background-color: #323232;
+  font-family: "Maven Pro", "Sans Serif";
+  margin: 0;
+}
+
+.get-in-touch::before{
+  display: inline-block;
+  width: 94%;
+  margin: -12px 3% 0px 3%;
+  content: "";
+  border-bottom: 1px solid #2b2b2b;
+}
+
+.get-in-touch::after{
+  display: inline-block;
+  width: 94%;
+  margin: 0px 3% 10px 3%;
+  content: "";
+  border-top: 1px solid #2b2b2b;
+}
+
+.get-in-container{
+  width: 780px;
+  margin: -16px auto -10px auto;
+  padding-top: 62px;
+  padding-bottom: 62px;
+  font-family: "Lato", "Sans Serif";
+}
+
+.form-contact{
+  display: flex; 
+}
+
+.get-in-touch h2{
+  font-family: "Maven Pro", "Sans Serif";
+  font-weight: 400;
+	font-size: 1.85em;
+  color: #e0e0e0;
+  margin-top: 0;
+  margin-bottom: 5px;
+  word-spacing: 0.1ch;
+}
+.get-in-touch h4{
+  font-family: "Maven Pro", "Sans Serif";
+  font-weight: 400;
+  color: #e0e0e0;
+  font-size: 1.1em;
+  margin-top: 3px;
+  margin-bottom: 12px;
+  word-spacing: 0.1ch;
+}
+
+.get-form{
+  width: 580px;
+  height: 370px;
+  padding: 0px 4px 0px 0px;
+}
+.get-form input, textarea{
+  box-sizing: border-box; 
+  width: 100%;
+  height: 38px;
+  margin: 8px 0px;
+  padding: 0px 15px;
+  line-height: 25pt;
+  font-family: "Lato", "Sans Serif";
+  font-size: 11px;
+  font-weight: 400;
+  background-color: #454545;
+  border: none;
+}
+
+.get-form textarea{
+  line-height: 25pt;
+  height: 150px;
+  margin: 8px auto;
+  padding: 2px 15px;
+  word-spacing: 0.1ch;
+  color: #bebebe;
+  border: none;
+  resize: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bebebe;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #bebebe;;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #bebebe;
+}
+
+.get-form button{
+  font-family: "Lato", "Sans Serif";
+  font-weight: 400;
+  font-size: 12px;
+  padding: 11px 28px 11px 30px;
+  background-color: #2eb398;
+  color: #d7fcf5;
+  border: none;
+  float: right;
+  margin-top: 7px;
+}
+
+.contact-info{
+  width: 180px;
+  margin-left: 15px;
+  padding-top: 4px;
+  padding-left: 2px;
+  font-family: "Lato", "Sans Serif";
+  font-size: 12px;
+  color: #bebebe;
+}
+
+.person-info{
+  text-align: justify;
+  line-height: 1.8em;
+}
+
+.person-info strong{
+  font-weight: 900; 
+}
+
+.contacts{
+  margin-top: 36px;
+}
+.contacts li{
+  font-weight: 700;
+  list-style-type: none;
+  margin-bottom: 6px;
+}
+.contacts a, .address{
+  margin-left: 11px;
   text-decoration: none;
+  color: #bebebe;
+}
+
+.contacts a:hover{
+  color: #2eb398;
+}
+
+.material-icons{
+  font-size: 14px;
+  display: inline;
+  margin-left:-1px; 
+}
+
+.phone-icon{
+  display: inline-block;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+}
+
+
+/*------------------------FOOTER------------------------*/
+footer{
+  display: flex;
+  height: 44px;
+  width: 100%;
+  background-color: #222222;
+}
+
+footer p{
+  align-self: center;
+  margin-left: 39px; 
+  font-family: "Maven Pro", "Sans Serif";
+  font-weight: 400;
+  color: #434343;
+  font-size: 11px;
+  word-spacing: 0.25ch;
 }
