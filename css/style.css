@@ -4,6 +4,35 @@ body{
   width: 1020px;
 }
 
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato/Lato-Regular.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato/Lato-Bold.ttf')  format('truetype');
+	font-weight: 700;
+}
+@font-face {
+  font-family: 'MavenPro';
+  src: url('../assets/fonts/Maven_Pro/MavenPro-Regular.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'MavenPro';
+  src: url('../assets/fonts/Maven_Pro/MavenPro-Bold.ttf')  format('truetype');
+	font-weight: 700;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato/Lato-Black.ttf')  format('truetype');
+	font-weight: 900;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/material-icons.woff2") format('woff2');
+}
 /*--------------------header----------------------*/
 header{
   widows: 100%;
@@ -194,55 +223,62 @@ nav a:visited{
 }
 
 .hex-image:hover{
+<<<<<<< HEAD
   background-size: cover;
   filter: brightness(155%);
   -webkit-filter: brightness(155%);
+=======
+  background-size: 150%;
+	background-position: center;
+  filter: brightness(55%);
+  -webkit-filter: brightness(55%);
+>>>>>>> 290537f9e7b6227bf9a6037b5a25bd261a04f234
   cursor: pointer;
 }
 
 .hex1-1{
-  background-image: url("../assets/hex-1.png");
+  background-image: url("../assets/images/hex-1.png");
   background-position: -22px -11px;
 }
 .hex1-2{
-  background-image: url("../assets/hex-2.png");
+  background-image: url("../assets/images/hex-2.png");
   background-position: -22px -9px;
 }
 .hex1-3{
-  background-image: url("../assets/hex-3.png");
+  background-image: url("../assets/images/hex-3.png");
 }
 .hex1-4{
-  background-image: url("../assets/hex-4.png");
+  background-image: url("../assets/images/hex-4.png");
   background-position: -21px -17px;
 }
 .hex2-1{
-  background-image: url("../assets/hex-5.png");
+  background-image: url("../assets/images/hex-5.png");
   background-position: -21px -12px;
 }
 .hex2-2{
-  background-image: url("../assets/hex-6.png");
+  background-image: url("../assets/images/hex-6.png");
   background-position: -21px -12px;
 }
 .hex2-3{
-  background-image: url("../assets/hex-7.png");
+  background-image: url("../assets/images/hex-7.png");
 }
 .hex2-4{
-  background-image: url("../assets/hex-8.png");
+  background-image: url("../assets/images/hex-8.png");
 }
 .hex2-5{
-  background-image: url("../assets/hex-9.png");
+  background-image: url("../assets/images/hex-9.png");
 }
 .hex3-1{
-  background-image: url("../assets/hex-10.png");
+  background-image: url("../assets/images/hex-10.png");
 }
 .hex3-2{
-  background-image: url("../assets/hex-11.png");
+  background-image: url("../assets/images/hex-11.png");
 }
 .hex3-3{
-  background-image: url("../assets/hex-12.png");
+  background-image: url("../assets/images/hex-12.png");
 }
 .hex3-4{
-  background-image: url("../assets/hex-13.png");
+  background-image: url("../assets/images/hex-13.png");
   background-position: -11px -6px;
 }
 
@@ -299,12 +335,12 @@ nav a:visited{
   flex-shrink: 0;
 }
 .img-author{
-  background-image: url("../assets/anderson-photo.jpg");
+  background-image: url("../assets/images/anderson-photo.jpg");
   pointer-events: none;
 }
 
 .author-info{
-	font-family: "Maven Pro", "Sans Serif";
+	font-family: "MavenPro", "Sans Serif";
 	margin: -1px 9px 1px 9px;
 }
 .author-info h2{
@@ -360,7 +396,7 @@ nav a:visited{
 /*----------------------GET-IN-TOUCH---------------------------------------*/
 .get-in-touch{
   background-color: #323232;
-  font-family: "Maven Pro", "Sans Serif";
+  font-family: "MavenPro", "Sans Serif";
   margin: 0;
 }
 
@@ -393,7 +429,7 @@ nav a:visited{
 }
 
 .get-in-touch h2{
-  font-family: "Maven Pro", "Sans Serif";
+  font-family: "MavenPro", "Sans Serif";
   font-weight: 400;
 	font-size: 1.85em;
   color: #e0e0e0;
@@ -402,7 +438,7 @@ nav a:visited{
   word-spacing: 0.1ch;
 }
 .get-in-touch h4{
-  font-family: "Maven Pro", "Sans Serif";
+  font-family: "MavenPro", "Sans Serif";
   font-weight: 400;
   color: #e0e0e0;
   font-size: 1.1em;
@@ -430,7 +466,7 @@ nav a:visited{
   border: none;
 }
 
-/* не по пиксель-перфект
+/* будет использоваться в дальнейшем для формы
 .get-form input:invalid { 
   border: 1px solid red;
 }*/
@@ -491,17 +527,25 @@ nav a:visited{
 }
 
 .contacts{
-  margin-top: 36px;
+  margin-top: 39px;
 }
 .contacts li{
   font-weight: 700;
   list-style-type: none;
-  margin-bottom: 6px;
+	margin-bottom: 7px;
 }
+
+.contacts li:nth-child(3){
+	margin-top: 8px;
+	margin-bottom:0px;
+}
+
 .contacts a, .address{
+	display: inline-block;
   margin-left: 11px;
   text-decoration: none;
   color: #bebebe;
+	vertical-align: middle;
 }
 
 .contacts a:hover{
@@ -509,9 +553,20 @@ nav a:visited{
 }
 
 .material-icons{
+	font-family: 'Material Icons';
   font-size: 14px;
-  display: inline;
-  margin-left:-1px; 
+  margin-left:-1px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;	
+	vertical-align: middle;
+	color: #2eb398;
 }
 
 .phone-icon{
@@ -533,7 +588,7 @@ footer{
 footer p{
   align-self: center;
   margin-left: 39px; 
-  font-family: "Maven Pro", "Sans Serif";
+  font-family: "MavenPro", "Sans Serif";
   font-weight: 400;
   color: #434343;
   font-size: 11px;
