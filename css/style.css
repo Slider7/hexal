@@ -195,8 +195,8 @@ nav a:visited{
 
 .hex-image:hover{
   background-size: cover;
-  filter: brightness(55%);
-  -webkit-filter: brightness(55%);
+  filter: brightness(155%);
+  -webkit-filter: brightness(155%);
   cursor: pointer;
 }
 
